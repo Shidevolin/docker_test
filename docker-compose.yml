@@ -1,6 +1,7 @@
 version: '3'
 services: 
   web:
+    network_mode: host
     image: "node:8"
     working_dir: '/app'
     volumes:
