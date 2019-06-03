@@ -7,4 +7,6 @@ services:
       - .:/app
     expose: 
       - '8080'
-    command: npm install express && node index.js
+    command: >
+      bash -c "npm install express 
+      && node index.js"
